@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventureiros das Formas Proibidas.</title>
+    <link rel="stylesheet" href="assets/css/cuboide.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container flex">
+      <div class="forma">
+          <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1>Cuboide</h1>
+        <img src="/assets/imagens/cuboide.png" alt="cuboide" />
+
+        <div class="calculos">
+          <div class="formula-first">
+            <div class="topo">Volume</div>
+            <div class="conteudo">
+              <p class="formula">V = c × l × h</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Comprimento" id="compV" />
+              <input type="text" placeholder="Largura" id="largV" />
+              <input type="text" placeholder="Altura" id="altV" />
+              <button onclick="volumeCuboide()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-second">
+            <div class="topo">Área Total</div>
+            <div class="conteudo">
+              <p class="formula">At = 2(cl + ch + lh)</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Comprimento" id="compAT" />
+              <input type="text" placeholder="Largura" id="largAT" />
+              <input type="text" placeholder="Altura" id="altAT" />
+              <button onclick="areaTotalCuboide()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-three">
+            <div class="topo">Diagonal Espacial</div>
+            <div class="conteudo">
+              <p class="formula">d = √(c² + l² + h²)</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Comprimento" id="compD" />
+              <input type="text" placeholder="Largura" id="largD" />
+              <input type="text" placeholder="Altura" id="altD" />
+              <button onclick="diagonalCuboide()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-for">
+            <div class="topo">Área da Base</div>
+            <div class="conteudo">
+              <p class="formula">Ab = c × l</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Comprimento" id="compB" />
+              <input type="text" placeholder="Largura" id="largB" />
+              <button onclick="areaBaseCuboide()">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="caixa-resultado">
+        <h2>Resultado</h2>
+        <p id="tipoResultado">Aqui vai aparecer o cálculo ✨</p>
+        <div id="valorResultado">--</div>
+      </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

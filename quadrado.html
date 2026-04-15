@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventureiros das Formas Proibidas.</title>
+    <link rel="stylesheet" href="assets/css/quadrado.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container flex">
+      <div class="forma">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1>Quadrado</h1>
+        <img src="/assets/imagens/quadrado.png" alt="quadrado" />
+
+        <div class="calculos">
+          <div class="formula-first">
+            <div class="topo">Área</div>
+            <div class="conteudo">
+              <p class="formula">A = l²</p>
+              <div class="linha"></div>
+              <input
+                type="text"
+                placeholder="Comprimento do lado"
+                id="ladoArea"
+              />
+              <button onclick="areaQuadrado()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-second">
+            <div class="topo">Perímetro</div>
+            <div class="conteudo">
+              <p class="formula">P = 4l</p>
+              <div class="linha"></div>
+              <input
+                type="text"
+                placeholder="Comprimento do lado"
+                id="ladoPerimetro"
+              />
+              <button onclick="perimetroQuadrado()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-three">
+            <div class="topo">Diagonal</div>
+            <div class="conteudo">
+              <p class="formula">d = l√2</p>
+              <div class="linha"></div>
+              <input
+                type="text"
+                placeholder="Comprimento do lado"
+                id="ladoDiagonal"
+              />
+              <button onclick="diagonalQuadrado()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-for">
+            <div class="topo">Área da Diagonal</div>
+            <div class="conteudo">
+              <p class="formula">d² = 2l²</p>
+              <div class="linha"></div>
+              <input
+                type="text"
+                placeholder="Comprimento do lado"
+                id="ladoAreaDiagonal"
+              />
+              <button onclick="areaDiagonalQuadrado()">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="caixa-resultado">
+        <h2>Resultado</h2>
+        <p id="tipoResultado">Aqui vai aparecer o cálculo ✨</p>
+        <div id="valorResultado">--</div>
+      </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

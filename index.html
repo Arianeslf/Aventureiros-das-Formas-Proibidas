@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventureiros das Formas Proibidas.</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="top-container">
+          <img
+            src="assets/imagens/icons/logo.svg"
+            alt="Logo do jogo"
+            class="logo"
+          />
+
+          <h1>Aventura <span>Geométrica</span></h1>
+
+          <!-- BOTÃO COM CAIXA DE INFO -->
+          <div class="info-wrapper">
+            <button onclick="toggleInfo()">Mais Informações</button>
+
+            <div class="caixa-info" id="caixaInfo">
+              <h3>Sobre o Projeto</h3>
+
+              <p>
+                Bem-vindo à <strong>Aventura Geométrica</strong>!
+              </p>
+
+              <p>
+                Aqui você pode aprender e calcular áreas, volumes e perímetros
+                de diversas formas geométricas de maneira divertida.
+              </p>
+
+              <p>
+                Escolha uma forma abaixo para começar seus cálculos!
+              </p>
+            </div>
+          </div>
+          <!-- FIM -->
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="formas">
+          <div class="fg">
+            <h2>Circulo</h2>
+            <img src="/assets/imagens/circulo.png" alt="circulo" />
+            <a href="/circulo.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Cubo</h2>
+            <img src="assets/imagens/cubo.png" alt="Cubo" />
+            <a href="/cubo.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Retângulo</h2>
+            <img src="assets/imagens/retangulo.png" alt="Retângulo" />
+            <a href="/retangulo.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Romboedro</h2>
+            <img src="assets/imagens/rombroedro.png" alt="rombroedro" />
+            <a href="/rombroedro.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Trapézio Irregular</h2>
+            <img
+              src="assets/imagens/TrapezioIrregular.png"
+              alt="Trapézio Irregular"
+            />
+            <a href="/trapezioIrregular.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Polígono Regular</h2>
+            <img
+              src="assets/imagens/PoligonoRegularcomNLados.png"
+              alt="Polígono Regular com N Lados"
+            />
+            <a href="/PRcN.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Quadrado</h2>
+            <img src="assets/imagens/quadrado.png" alt="Quadrado" />
+            <a href="/quadrado.html">Calcular</a>
+          </div>
+
+          <div class="fg">
+            <h2>Cubóide</h2>
+            <img src="assets/imagens/Cuboide.png" alt="Cubóide" />
+            <a href="/Cuboide.html">Calcular</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function toggleInfo() {
+        document.getElementById("caixaInfo").classList.toggle("ativo");
+      }
+    </script>
+  </body>
+</html>

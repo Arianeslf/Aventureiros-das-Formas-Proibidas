@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventureiros das Formas Proibidas.</title>
+    <link rel="stylesheet" href="assets/css/rombroedo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container flex">
+      <div class="forma">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1>Rombroedo</h1>
+        <img src="/assets/imagens/rombroedro.png" alt="circulo" />
+
+        <div class="calculos">
+          <div class="formula-first">
+            <div class="topo">Volume</div>
+            <div class="conteudo">
+              <p class="formula">V = ((D · d) / 2). h</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Diagonal maior" id="DMaior" />
+              <input type="text" placeholder="Diagonal menor" id="dMenor" />
+              <input type="text" placeholder="Altura" id="alturaV" />
+              <button onclick="VolumeRombroedo()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-second">
+            <div class="topo">Área da base</div>
+            <div class="conteudo">
+              <p class="formula">Ab = (D . d) / 2</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Diagonal maior" id="DMaiorB" />
+              <input type="text" placeholder="Diagonal menor" id="dMenorB" />
+              <button onclick="areaDaBase()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-three">
+            <div class="topo">Área total</div>
+            <div class="conteudo">
+              <p class="formula">At = 2Ab + Al</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Àrea da base" id="AB" />
+              <input type="text" placeholder="Àrea lateral" id="Al" />
+              <button onclick="areaTotalR()">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="caixa-resultado">
+        <h2>Resultado</h2>
+        <p id="tipoResultado">Aqui vai aparecer o cálculo ✨</p>
+        <div id="valorResultado">--</div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

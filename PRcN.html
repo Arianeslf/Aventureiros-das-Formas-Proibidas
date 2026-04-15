@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventureiros das Formas Proibidas.</title>
+    <link rel="stylesheet" href="assets/css/PRcN.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container flex">
+      <div class="forma">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1>Polígono Regular com N Lados</h1>
+        <img src="/assets/imagens/PoligonoRegularcomNLados.png" alt="circulo" />
+
+        <div class="calculos">
+          <div class="formula-first">
+            <div class="topo">Área</div>
+            <div class="conteudo">
+              <p class="formula">A = (P . a) / 2</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Perímetro" id="perimetroP" />
+              <input type="text" placeholder="Apótema" id="apotemaP" />
+              <button onclick="areaPoligono()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-second">
+            <div class="topo">Perímetro</div>
+            <div class="conteudo">
+              <p class="formula">P = n . l</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Número de lados" id="NDLP" />
+              <input type="text" placeholder="Comprimento do lado" id="CDLP" />
+              <button onclick="PerimetroPoligono()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-three">
+            <div class="topo">Soma dos Ângulos Internos</div>
+            <div class="conteudo">
+              <p class="formula">S = (n - 2) ⋅ 180</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Número de lados" id="SAIN" />
+              <button onclick="SomadosangulosI()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-for">
+            <div class="topo">Valor de Cada Ângulo Interno</div>
+            <div class="conteudo">
+              <p class="formula">Ai = ((n - 2) ⋅ 180) / n</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Número de lados" id="VAIN" />
+              <button onclick="valordecadaAI()">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="caixa-resultado">
+        <h2>Resultado</h2>
+        <p id="tipoResultado">Aqui vai aparecer o cálculo ✨</p>
+        <div id="valorResultado">--</div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

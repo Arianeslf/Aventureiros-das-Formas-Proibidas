@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventureiros das Formas Proibidas.</title>
+    <link rel="stylesheet" href="assets/css/retangulo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container flex">
+      <div class="forma">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+        <h1>Retângulo</h1>
+        <img src="/assets/imagens/retangulo.png" alt="circulo" />
+
+        <div class="calculos">
+          <div class="formula-first">
+            <div class="topo">Área</div>
+            <div class="conteudo">
+              <p class="formula">A = b . h</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Digite a base" id="areaRB" />
+              <input type="text" placeholder="Digite a altura" id="areaRH" />
+              <button onclick="areaRetangulo()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-second">
+            <div class="topo">Perímetro</div>
+            <div class="conteudo">
+              <p class="formula">P = 2(b + h)</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Digite a base" id="perimetroB" />
+              <input
+                type="text"
+                placeholder="Digite a altura"
+                id="perimetroH"
+              />
+              <button onclick="perimetro()">Calcular</button>
+            </div>
+          </div>
+
+          <div class="formula-three">
+            <div class="topo">Diagonal</div>
+            <div class="conteudo">
+              <p class="formula">d = √b² + h²</p>
+              <div class="linha"></div>
+              <input type="text" placeholder="Digite a base" id="diagonalB" />
+              <input type="text" placeholder="Digite a altura" id="diagonalH" />
+              <button onclick="diagonal()">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="caixa-resultado">
+        <h2>Resultado</h2>
+        <p id="tipoResultado">Aqui vai aparecer o cálculo ✨</p>
+        <div id="valorResultado">--</div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
