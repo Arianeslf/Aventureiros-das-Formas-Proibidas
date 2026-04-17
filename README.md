@@ -2,7 +2,7 @@
 
 Projeto web educativo desenvolvido para ajudar no aprendizado de formas geométricas de maneira visual, interativa e divertida.
 
-![Demo do projeto](./assets/demo.gif)
+![Demo do projeto](./assets/video.gif)
 
 ## Sobre o projeto
 
