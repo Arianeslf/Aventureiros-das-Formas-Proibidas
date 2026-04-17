@@ -2,6 +2,8 @@
 
 Projeto web educativo desenvolvido para ajudar no aprendizado de formas geométricas de maneira visual, interativa e divertida.
 
+![Demo do projeto](./assets/imagens/video-site.mp4)
+
 ## Sobre o projeto
 
 O **Aventureiros das Formas Proibidas** é um site que permite ao usuário explorar diferentes formas geométricas e realizar cálculos matemáticos de forma simples. A proposta é unir aprendizado e interação em uma interface amigável, colorida e acessível.
@@ -38,7 +40,8 @@ Atualmente, o projeto possui páginas para as seguintes formas:
 - Botão para calcular
 - Caixa de resultado para mostrar o cálculo final
 - Interface visual com imagens das formas
-- 
+-
+
 ## 🚀 Tecnologias Utilizadas
 
 <p align="left">
@@ -48,6 +51,7 @@ Atualmente, o projeto possui páginas para as seguintes formas:
 </p>
 
 ## Estrutura do projeto
+
 ```bash
 Aventureiros-das-Formas-Proibidas/
 │
@@ -65,3 +69,4 @@ Aventureiros-das-Formas-Proibidas/
 ├── retangulo.html
 ├── rombroedro.html
 ├── trapezioIrregular.html
+```
