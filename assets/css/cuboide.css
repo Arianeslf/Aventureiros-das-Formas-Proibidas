@@ -6,7 +6,7 @@
 
 body {
   color: #fff;
-  background-image: url("/assets/imagens/fundoformas.jpg");
+  background-image: url("assets/imagens/fundoformas.jpg");
   background-size: cover;
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +38,9 @@ body {
   font-size: 1rem;
   border: 2px solid #2b0b59;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, background-color 0.3s ease,
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
     box-shadow 0.3s ease;
   z-index: 10;
 }
@@ -60,7 +62,9 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   position: relative;
   padding-top: 70px;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .forma:hover {
@@ -72,7 +76,9 @@ body {
   font-family: "Chewy", cursive;
   font-size: 4rem;
   color: #1f0a4a;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .forma h1:hover {
@@ -85,7 +91,9 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
 }
 
 .forma img:hover {
@@ -112,7 +120,9 @@ body {
   border: 3px solid;
   background: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .calculos .formula-first:hover,
@@ -164,7 +174,9 @@ body {
   font-size: 2rem;
   font-weight: bold;
   font-family: "Chewy", cursive;
-  transition: letter-spacing 0.3s ease, transform 0.3s ease;
+  transition:
+    letter-spacing 0.3s ease,
+    transform 0.3s ease;
 }
 
 .calculos .formula-first:hover .topo,
@@ -185,7 +197,9 @@ body {
   font-weight: bold;
   color: #1d1b4b;
   margin-bottom: 10px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .formula:hover {
@@ -209,7 +223,9 @@ body {
   font-size: 1rem;
   outline: none;
   margin: 10px 0;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease,
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
     transform 0.3s ease;
 }
 
@@ -230,7 +246,9 @@ body {
   font-weight: bold;
   border-radius: 5px;
   border-bottom: #321d7c solid 4px;
-  transition: transform 0.25s ease, background-color 0.25s ease,
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
     box-shadow 0.25s ease;
 }
 
@@ -250,7 +268,9 @@ body {
   padding: 22px;
   text-align: center;
   box-shadow: 0 6px 0 rgba(123, 92, 241, 0.15);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .caixa-resultado:hover {
@@ -263,7 +283,9 @@ body {
   color: #4d2db7;
   margin-bottom: 15px;
   font-size: 2rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .caixa-resultado:hover h2 {
@@ -286,7 +308,9 @@ body {
   border-radius: 18px;
   padding: 18px;
   border: 2px dashed #cfc4ff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
     color 0.3s ease;
 }
 
