@@ -31,6 +31,14 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   position: relative;
   padding-top: 70px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.forma:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
 }
 
 .btn-voltar {
@@ -46,19 +54,31 @@ body {
   font-size: 1rem;
   border: 2px solid #2b0b59;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   z-index: 10;
 }
 
 .btn-voltar:hover {
-  transform: scale(1.05);
+  transform: scale(1.08) translateY(-2px);
   background: #321d7c;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .forma h1 {
   font-family: "Chewy", cursive;
   font-size: 4rem;
   color: #1f0a4a;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.forma h1:hover {
+  transform: scale(1.03);
+  color: #4d2db7;
 }
 
 .forma img {
@@ -66,6 +86,14 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.forma img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  filter: drop-shadow(0 8px 12px rgba(123, 92, 241, 0.2));
 }
 
 .calculos {
@@ -84,6 +112,15 @@ body {
   border: 3px solid;
   background: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.calculos .formula-first:hover,
+.calculos .formula-second:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* caixa área */
@@ -111,6 +148,15 @@ body {
   font-size: 2rem;
   font-weight: bold;
   font-family: "Chewy", cursive;
+  transition:
+    letter-spacing 0.3s ease,
+    transform 0.3s ease;
+}
+
+.calculos .formula-first:hover .topo,
+.calculos .formula-second:hover .topo {
+  letter-spacing: 1px;
+  transform: scale(1.02);
 }
 
 .conteudo {
@@ -123,6 +169,14 @@ body {
   font-weight: bold;
   color: #1d1b4b;
   margin-bottom: 10px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.formula:hover {
+  color: #7b5cf1;
+  transform: scale(1.03);
 }
 
 .linha {
@@ -130,6 +184,9 @@ body {
   height: 2px;
   background: #ececec;
   margin-bottom: 10px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .conteudo input {
@@ -139,10 +196,16 @@ body {
   border-radius: 12px;
   font-size: 1rem;
   outline: none;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .conteudo input:focus {
   border-color: #9c6bff;
+  box-shadow: 0 0 0 4px rgba(156, 107, 255, 0.15);
+  transform: scale(1.02);
 }
 
 .conteudo button {
@@ -156,12 +219,18 @@ body {
   font-weight: bold;
   border-radius: 5px;
   border-bottom: #321d7c solid 4px;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    border-bottom 0.25s ease;
 }
 
 .conteudo button:hover {
-  margin-top: 14px;
+  transform: translateY(4px) scale(1.03);
   border-bottom: none;
   background-color: #321d7c;
+  box-shadow: 0 8px 16px rgba(50, 29, 124, 0.25);
 }
 
 .caixa-resultado {
@@ -173,6 +242,14 @@ body {
   padding: 22px;
   text-align: center;
   box-shadow: 0 6px 0 rgba(123, 92, 241, 0.15);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.caixa-resultado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(123, 92, 241, 0.2);
 }
 
 .caixa-resultado h2 {
@@ -180,12 +257,21 @@ body {
   color: #4d2db7;
   margin-bottom: 15px;
   font-size: 2rem;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.caixa-resultado:hover h2 {
+  color: #7b5cf1;
+  transform: scale(1.04);
 }
 
 #tipoResultado {
   font-size: 18px;
   color: #666;
   margin-bottom: 20px;
+  transition: opacity 0.3s ease;
 }
 
 #valorResultado {
@@ -196,6 +282,16 @@ body {
   border-radius: 18px;
   padding: 18px;
   border: 2px dashed #cfc4ff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+#valorResultado:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 16px rgba(123, 92, 241, 0.15);
+  color: #4d2db7;
 }
 
 @media (max-width: 768px) {
